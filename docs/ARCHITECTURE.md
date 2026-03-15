@@ -141,7 +141,7 @@ await db.execute("PRAGMA journal_mode=WAL")
 
 ### v0.1: Two-Terminal (Current)
 
-The primary mode. Two MCP client sessions connect to one Ploidy server via Streamable HTTP. The Deep session carries full project context; the Fresh session starts clean. Zero additional cost for Claude Max / Gemini Pro subscribers.
+The primary mode. Two MCP client sessions connect to one Ploidy server via Streamable HTTP. The Deep session carries full project context; the Fresh session starts clean. Zero additional cost for users with subscription-based AI clients.
 
 ### v0.2: API Fallback
 

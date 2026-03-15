@@ -53,7 +53,7 @@ Terminal 1 (Deep Session)                Terminal 2 (Fresh Session)
 
 ### Why Two-Terminal First
 
-1. **Zero additional cost.** If you have a Claude Max or Gemini Pro subscription, all sessions use existing quota -- no API keys, no per-token billing.
+1. **Zero additional cost.** If you have a subscription-based AI client (e.g., Claude, Gemini, Copilot), all sessions use your existing quota -- no API keys, no per-token billing.
 
 2. **Strongest context isolation.** Each terminal is a completely separate OS process with its own conversation history, system prompt state, context window, and memory. There is no mechanism by which the Fresh session could accidentally access the Deep session's context.
 

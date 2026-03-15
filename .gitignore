@@ -45,3 +45,6 @@ site/
 
 # Korean documentation (local only)
 docs/ko/
+
+# Claude Code config (local only)
+CLAUDE.md
