@@ -13,6 +13,52 @@ def _set_api_env(monkeypatch):
     monkeypatch.setenv("PLOIDY_API_MODEL", "test-model")
 
 
+class TestResolveApiConfig:
+    """Zero-config fallback so ``mode='auto'`` works without .mcp.json edits."""
+
+    def test_ploidy_vars_win_when_set(self, monkeypatch):
+        from ploidy.api_client import _resolve_api_config
+
+        monkeypatch.setenv("PLOIDY_API_BASE_URL", "http://custom:9999")
+        monkeypatch.setenv("PLOIDY_API_KEY", "ploidy-key")
+        monkeypatch.setenv("ANTHROPIC_API_KEY", "anthropic-key")
+        base_url, api_key, _ = _resolve_api_config()
+        assert base_url == "http://custom:9999"
+        assert api_key == "ploidy-key"
+
+    def test_anthropic_key_auto_configures_endpoint(self, monkeypatch):
+        from ploidy.api_client import _ANTHROPIC_OPENAI_COMPAT_URL, _resolve_api_config
+
+        monkeypatch.delenv("PLOIDY_API_BASE_URL", raising=False)
+        monkeypatch.delenv("PLOIDY_API_KEY", raising=False)
+        monkeypatch.setenv("ANTHROPIC_API_KEY", "anthropic-key")
+        base_url, api_key, _ = _resolve_api_config()
+        assert base_url == _ANTHROPIC_OPENAI_COMPAT_URL
+        assert api_key == "anthropic-key"
+
+    def test_disabled_when_no_credentials(self, monkeypatch):
+        from ploidy.api_client import _resolve_api_config
+
+        monkeypatch.delenv("PLOIDY_API_BASE_URL", raising=False)
+        monkeypatch.delenv("PLOIDY_API_KEY", raising=False)
+        monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+        base_url, api_key, _ = _resolve_api_config()
+        assert base_url is None
+        assert api_key == ""
+
+    def test_ploidy_url_without_key_gets_anthropic_key_fallback(self, monkeypatch):
+        from ploidy.api_client import _resolve_api_config
+
+        # Custom proxy URL but no explicit PLOIDY_API_KEY → fall back on
+        # ANTHROPIC_API_KEY rather than sending an empty auth header.
+        monkeypatch.setenv("PLOIDY_API_BASE_URL", "http://proxy:8080")
+        monkeypatch.delenv("PLOIDY_API_KEY", raising=False)
+        monkeypatch.setenv("ANTHROPIC_API_KEY", "anthropic-key")
+        base_url, api_key, _ = _resolve_api_config()
+        assert base_url == "http://proxy:8080"
+        assert api_key == "anthropic-key"
+
+
 def _mock_completion(content: str = "test response"):
     """Create a mock chat completion response."""
     choice = MagicMock()
@@ -134,3 +180,5 @@ class TestFreshPosition:
         if system_msgs:
             content = system_msgs[0].get("content", "").lower()
             assert "no background" in content or "no context" in content
+
+
