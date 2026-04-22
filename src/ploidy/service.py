@@ -1138,7 +1138,10 @@ class DebateService:
             raise PloidyError("API client not available. Install with: pip install ploidy[api]")
 
         if not is_api_available():
-            raise PloidyError("API not configured. Set PLOIDY_API_BASE_URL environment variable.")
+            raise PloidyError(
+                "API not configured. Set PLOIDY_API_BASE_URL (or provide "
+                "ANTHROPIC_API_KEY to auto-configure the Anthropic endpoint)."
+            )
 
         # ── Validate inputs ─────────────────────────────────────────────
         self._validate_length(prompt, self.max_prompt_len, "prompt")

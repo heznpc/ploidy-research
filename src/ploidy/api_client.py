@@ -15,6 +15,13 @@ Environment variables:
     PLOIDY_API_BASE_URL: API endpoint URL (None = disabled)
     PLOIDY_API_KEY: API key for authentication
     PLOIDY_API_MODEL: Model identifier (default: claude-opus-4-6)
+
+Zero-config fallback:
+    If ``PLOIDY_API_BASE_URL`` is unset but ``ANTHROPIC_API_KEY`` is
+    present (the default for any Claude Code session), auto mode is
+    enabled against Anthropic's OpenAI-compat endpoint. This removes
+    the "edit ``.mcp.json`` + restart Claude Code" friction and lets
+    ``mode="solo"`` / ``mode="auto"`` be a pure per-call toggle.
 """
 
 import asyncio
@@ -35,9 +42,30 @@ _CLIENT_TIMEOUT = 120.0  # seconds for client-level HTTP timeout
 # Configuration
 # ---------------------------------------------------------------------------
 
-_API_BASE_URL = os.environ.get("PLOIDY_API_BASE_URL")
-_API_KEY = os.environ.get("PLOIDY_API_KEY", "")
-_API_MODEL = os.environ.get("PLOIDY_API_MODEL", "claude-opus-4-6")
+_ANTHROPIC_OPENAI_COMPAT_URL = "https://api.anthropic.com/v1/openai"
+
+
+def _resolve_api_config() -> tuple[str | None, str, str]:
+    """Resolve ``(base_url, api_key, model)`` from env with fallbacks.
+
+    ``PLOIDY_*`` vars win when set. Otherwise, a present
+    ``ANTHROPIC_API_KEY`` auto-configures the Anthropic OpenAI-compat
+    endpoint so auto mode works out of the box from Claude Code.
+    """
+    base_url = os.environ.get("PLOIDY_API_BASE_URL")
+    api_key = os.environ.get("PLOIDY_API_KEY", "")
+    model = os.environ.get("PLOIDY_API_MODEL", "claude-opus-4-6")
+
+    anthropic_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not base_url and anthropic_key:
+        base_url = _ANTHROPIC_OPENAI_COMPAT_URL
+    if not api_key and anthropic_key:
+        api_key = anthropic_key
+
+    return base_url, api_key, model
+
+
+_API_BASE_URL, _API_KEY, _API_MODEL = _resolve_api_config()
 # Opt-in prompt caching. Anthropic's OpenAI-compat endpoint honours
 # cache_control breakpoints when passed via structured content blocks;
 # leaving this off preserves single-block behaviour for providers that
