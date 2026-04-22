@@ -20,7 +20,6 @@ from mcp.server.fastmcp import FastMCP
 from ploidy.oauth import PloidyOAuthProvider
 from ploidy.store import DebateStore
 
-
 _ISSUER = "https://example.com"
 
 
