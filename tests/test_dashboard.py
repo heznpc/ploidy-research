@@ -239,9 +239,7 @@ class TestAppRoutes:
         async def send(msg):
             captured.append(msg)
 
-        await dashboard.app(
-            _scope(client=("10.0.0.5", 1)), receive, send
-        )
+        await dashboard.app(_scope(client=("10.0.0.5", 1)), receive, send)
         starts = [m for m in captured if m["type"] == "http.response.start"]
         assert starts[0]["status"] == 401
 
