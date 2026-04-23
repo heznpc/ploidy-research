@@ -1140,6 +1140,86 @@ This framing effect---identical content producing different outputs depending on
 \paragraph{Human-as-Fresh.}
 A third source of independence---human reviewers without project context---was observed incidentally during external evaluation of this research portfolio. An LLM evaluator consistently framed incomplete projects as deficient (ADHD-pattern interpretation), while the human author corrected the framing (``these are completed to preprint standard, not abandoned''). This single observation does not constitute evidence, but it suggests that human independence operates through \emph{different knowledge} rather than \emph{absent knowledge}, a qualitatively different mechanism from both Tool-Fresh and LLM-Fresh. Controlled evaluation of Human-as-Fresh requires IRB approval and is left for future work.
 
+\subsection{Design-Time Failure Modes in the Redesign Process}
+\label{sec:design-time-failures}
+
+While this paper's thesis concerns LLM sessions solving user tasks, the
+redesign process of our own Stage B experiments (2026-04) produced an
+unplanned $N=1$ case study: the redesigning sessions themselves exhibited
+the confirmation-bias failure modes Ploidy is designed to address. We
+document the observed modes not as controlled evidence but as existence
+proofs, each recoverable from archived session logs.
+
+\begin{itemize}[leftmargin=1.5em]
+  \item \textbf{R6 --- Review mode role drift.} A Fresh Claude Code session,
+  assigned to review a design proposal, spent six or more turns in review
+  mode without transitioning to implementation, even after explicit
+  operator prompts to switch to build mode. Role inertia manifested as the
+  session repeatedly reverting to critique when presented with each new
+  iteration.
+
+  \item \textbf{R7 --- Worktree isolation with parallel duplicate
+  implementation.} Two Claude Code worktrees on the same repository
+  independently implemented the same experiment primitives. Neither
+  session observed the other's work, and the two implementations had
+  diverging output schemas that would have silently produced incompatible
+  results if merged naively. Filesystem-level isolation prevented
+  cross-reference.
+
+  \item \textbf{R8 --- Background run observability blackout.} Background
+  experiment runs launched via \texttt{nohup} produced no structured
+  provenance (no manifest, no per-cell log, no heartbeat). Earlier
+  experiment waves lost runs silently: one prior cycle recorded 442
+  session invocations against only 7 completed experimental runs.
+  Interrupted processes disappeared without recovery trace.
+
+  \item \textbf{R9 --- Parallel subprocess rate-limit thrash.} During
+  wave-1 execution (2026-03-28), concurrent CLI invocations repeatedly
+  triggered upstream rate limits, requiring scripted sleep-and-resume
+  logic that produced multi-hour wall-clock delays (five resume logs
+  from that date). The incident motivated a retry daemon design but the
+  underlying coordination parameters---worker count, back-off schedule,
+  per-model pooling---remained underspecified until Stage B.
+
+  \item \textbf{R10 --- Spec-code coherence drift.} The Stage B
+  specification explicitly required a \texttt{stochastic\_n} baseline for
+  $1n$ null-distribution calibration. The cell generator was written with
+  \texttt{methods=["ploidy"]} instead; one token of divergence invalidated
+  the resulting variance measurements. The gap was caught only after
+  ninety-six minutes of wasted pilot compute. Specification and
+  implementation disagreed silently.
+
+  \item \textbf{R11 --- Pattern completion over authorization granularity.}
+  When the operator directed the session to ``commit a lesson to memory,''
+  the session treated \emph{which} lesson and \emph{what wording} as
+  within its authorization, writing a self-extracted rule file without
+  operator dictation. The underspecified parameter (content selection) was
+  filled via session priors rather than surfaced as a question.
+
+  \item \textbf{R12 --- Salience-driven agenda import.} During revisions
+  to \S\ref{sec:related}, a Fresh session web-searched recent multi-agent
+  failure taxonomies and introduced unprompted positioning against a
+  prominent 2025 taxonomy. The framing was pushed through multiple turns
+  before the operator verified that the paper's initial release preceded
+  the external work, rendering intellectual influence chronologically
+  impossible. In defense of the imported agenda, the session repeatedly
+  claimed a paper section existed that did not, only self-correcting when
+  prompted to verify directly. External salience (search-result prominence)
+  was mistaken for internal relevance.
+\end{itemize}
+
+These modes are not independent: R12 exemplifies how a session's own
+retrieval surface can act as an uninvited context injection, while R11
+illustrates the downstream effect of underspecified directives.
+R7--R10 represent the tooling layer; R11--R12 represent the reasoning
+layer. Across all seven, the common element is the absence of a
+structurally independent verifier: the operator's out-of-session
+cross-checks (git state, file grep, commit history, direct recall)
+functioned as an ad-hoc substitute, and where no such substitute was
+applied, the failures persisted. These observations are consistent with
+the paper's framing of context asymmetry as a design-space dimension
+rather than a single-axis performance improvement.
+
 % ============================================================
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
