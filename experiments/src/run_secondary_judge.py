@@ -36,7 +36,6 @@ import sys
 from collections import Counter
 from pathlib import Path
 
-
 JUDGE_PROMPT_TEMPLATE = (
     "You are an expert judge evaluating a code review / architecture analysis.\n\n"
     "GROUND TRUTH issues (known correct answers):\n{gt_list}\n\n"
