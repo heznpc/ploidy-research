@@ -1688,7 +1688,7 @@ def run_experiment(
     else:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         results_dir = (
-            Path(__file__).parent
+            Path(__file__).parent.parent
             / "results"
             / f"{timestamp}_effort-{eff}_lang-{actual_lang}_inj-{inj}"
         )
@@ -1889,7 +1889,7 @@ def run_effort_sweep(task_ids=None, method_ids=None, efforts=None):
 
     # Save sweep results
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    sweep_dir = Path(__file__).parent / "results" / f"{timestamp}_effort-sweep"
+    sweep_dir = Path(__file__).parent.parent / "results" / f"{timestamp}_effort-sweep"
     sweep_dir.mkdir(parents=True, exist_ok=True)
     with open(sweep_dir / "sweep_summary.json", "w") as f:
         json.dump(all_sweep_results, f, indent=2, ensure_ascii=False)
@@ -1964,7 +1964,7 @@ def run_language_sweep(task_ids=None, method_ids=None, languages=None):
 
     # Save sweep results
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    sweep_dir = Path(__file__).parent / "results" / f"{timestamp}_lang-sweep"
+    sweep_dir = Path(__file__).parent.parent / "results" / f"{timestamp}_lang-sweep"
     sweep_dir.mkdir(parents=True, exist_ok=True)
     with open(sweep_dir / "lang_sweep_summary.json", "w") as f:
         json.dump(all_lang_results, f, indent=2, ensure_ascii=False)
@@ -2049,7 +2049,7 @@ def run_injection_sweep(task_ids=None, method_ids=None, modes=None):
 
     # Save sweep results
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    sweep_dir = Path(__file__).parent / "results" / f"{timestamp}_injection-sweep"
+    sweep_dir = Path(__file__).parent.parent / "results" / f"{timestamp}_injection-sweep"
     sweep_dir.mkdir(parents=True, exist_ok=True)
     with open(sweep_dir / "injection_sweep_summary.json", "w") as f:
         json.dump(all_inj_results, f, indent=2, ensure_ascii=False)
@@ -2135,7 +2135,7 @@ def run_ploidy_sweep(task_ids=None, method_ids=None, levels=None):
 
     # Save sweep results
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    sweep_dir = Path(__file__).parent / "results" / f"{timestamp}_ploidy-sweep"
+    sweep_dir = Path(__file__).parent.parent / "results" / f"{timestamp}_ploidy-sweep"
     sweep_dir.mkdir(parents=True, exist_ok=True)
     with open(sweep_dir / "ploidy_sweep_summary.json", "w") as f:
         json.dump(all_ploidy_results, f, indent=2, ensure_ascii=False)
@@ -2207,7 +2207,7 @@ def run_context_pct_sweep(task_ids=None, method_ids=None, percentages=None):
 
     # Save sweep results
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    sweep_dir = Path(__file__).parent / "results" / f"{timestamp}_context-pct-sweep"
+    sweep_dir = Path(__file__).parent.parent / "results" / f"{timestamp}_context-pct-sweep"
     sweep_dir.mkdir(parents=True, exist_ok=True)
     with open(sweep_dir / "context_pct_sweep_summary.json", "w") as f:
         json.dump(all_pct_results, f, indent=2, ensure_ascii=False)
