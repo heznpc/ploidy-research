@@ -365,7 +365,28 @@ def _call_claude(prompt: str, model: str, effort: str, system_prompt: str = None
         err_msg = result.stderr.strip() or result.stdout.strip()
         raise RuntimeError(f"claude CLI error: {err_msg}")
     output = result.stdout.strip()
-    if "hit your limit" in output.lower() or "resets" in output.lower():
+    # Detect the Claude-Max quota-exhaustion banner that ``claude --print``
+    # emits to stdout (with returncode 0) when the subscription cycle is
+    # exhausted. The original check used bare ``"hit your limit"`` /
+    # ``"resets"`` substrings, which fired on ordinary review content like
+    # *"rate limit resets every 60s"* or *"users hit their limit on login"*
+    # — long_auth_overhaul cells fail this way ~100% of the time. Require
+    # multi-word phrases that only appear in the actual CLI quota banner.
+    low = output.lower()
+    quota_banners = [
+        "claude usage limit reached",
+        "you've reached your usage limit",
+        "you have reached your usage limit",
+        "claude max usage limit",
+        "you've hit your usage limit",
+        "you've hit your subscription limit",
+        "hit your usage limit",
+        "usage limit. resets",
+        "usage limit. try again",
+        "limit reached. resets",
+        "limit reached. try again",
+    ]
+    if any(phrase in low for phrase in quota_banners):
         raise RuntimeError(f"claude CLI error: {output[:200]}")
     full_prompt = f"{system_prompt}\n\n{prompt}" if system_prompt else prompt
     _track_tokens(_estimate_tokens(full_prompt), _estimate_tokens(output))
