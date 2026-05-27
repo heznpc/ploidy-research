@@ -229,14 +229,44 @@ MAX_TOKENS = 8192  # sufficient for debate synthesis phases
 # CLI backends (claude, gemini, codex) don't report tokens, so we estimate
 # using chars/4 heuristic. API backends report exact usage.
 
-_token_tracker = {
-    "prompt_tokens": 0,
-    "completion_tokens": 0,
-    "total_tokens": 0,
-    "calls": 0,
-    "estimated": True,  # True if any call used char-based estimation
-}
+# Per-thread token tracker. The outer task loop now runs all methods of one
+# task concurrently (Single + CCR + Ploidy in parallel) and multiple tasks
+# concurrently too — a single global tracker would conflate token attribution
+# across methods. ``threading.local()`` gives each method-thread its own
+# counter. ``method_ploidy``'s *internal* ThreadPoolExecutor threads
+# (Deep/Fresh position+challenge phases) explicitly inherit the parent
+# thread's tracker via ``_bind_parent_tracker`` so their token writes still
+# land on the right per-method counter.
+_token_tls = threading.local()
 _token_tracker_lock = threading.Lock()
+
+
+def _new_tracker() -> dict:
+    return {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
+        "calls": 0,
+        "estimated": True,  # True if any call used char-based estimation
+    }
+
+
+def _current_tracker() -> dict:
+    """Return this thread's tracker dict (creating one on first access)."""
+    t = getattr(_token_tls, "tracker", None)
+    if t is None:
+        t = _new_tracker()
+        _token_tls.tracker = t
+    return t
+
+
+def _bind_parent_tracker(tracker: dict) -> None:
+    """Force the current thread to write into the supplied tracker dict.
+
+    Used by ``method_ploidy``'s internal ThreadPoolExecutor so child-thread
+    ``call_llm()`` writes still accumulate on the parent method's counter.
+    """
+    _token_tls.tracker = tracker
 
 
 def _estimate_tokens(text: str) -> int:
@@ -245,34 +275,31 @@ def _estimate_tokens(text: str) -> int:
 
 
 def _track_tokens(prompt_tokens: int, completion_tokens: int, exact: bool = False):
-    """Accumulate token usage for current run.
+    """Accumulate token usage for the current thread's tracker.
 
-    Lock-protected because ``method_ploidy`` and ``method_stochastic_n`` now
-    invoke ``call_llm`` from multiple threads concurrently for the
-    position / challenge phases. Each ``call_llm`` ends with a
-    ``_track_tokens`` write to the module-level counter dict.
+    Lock-protected because ``method_ploidy`` and ``method_stochastic_n``
+    invoke ``call_llm`` from multiple threads whose ``_token_tls`` has been
+    bound to the same parent dict. Concurrent dict increments would race
+    without the lock.
     """
+    t = _current_tracker()
     with _token_tracker_lock:
-        _token_tracker["prompt_tokens"] += prompt_tokens
-        _token_tracker["completion_tokens"] += completion_tokens
-        _token_tracker["total_tokens"] += prompt_tokens + completion_tokens
-        _token_tracker["calls"] += 1
+        t["prompt_tokens"] += prompt_tokens
+        t["completion_tokens"] += completion_tokens
+        t["total_tokens"] += prompt_tokens + completion_tokens
+        t["calls"] += 1
         if exact:
-            _token_tracker["estimated"] = False  # at least one exact measurement
+            t["estimated"] = False  # at least one exact measurement
 
 
 def reset_token_tracker():
-    """Reset tracker for a new method run."""
-    _token_tracker["prompt_tokens"] = 0
-    _token_tracker["completion_tokens"] = 0
-    _token_tracker["total_tokens"] = 0
-    _token_tracker["calls"] = 0
-    _token_tracker["estimated"] = True
+    """Reset tracker for a new method run on this thread."""
+    _token_tls.tracker = _new_tracker()
 
 
 def get_token_usage() -> dict:
-    """Return a copy of current token usage."""
-    return dict(_token_tracker)
+    """Return a copy of the current thread's token usage."""
+    return dict(_current_tracker())
 
 
 # Backend-specific model defaults
@@ -1297,14 +1324,21 @@ def method_ploidy(task: Task) -> str:
         f"For each issue, classify your confidence as HIGH, MEDIUM, or LOW."
     )
 
+    # Bind child threads to this thread's token tracker so their _track_tokens
+    # writes still land on the parent method's counter.
+    parent_tracker = _current_tracker()
+
+    def _deep_position_call() -> str:
+        _bind_parent_tracker(parent_tracker)
+        return call_llm(deep_prompt_text, system_prompt=sys_prompt)
+
+    def _fresh_position_call() -> str:
+        _bind_parent_tracker(parent_tracker)
+        return call_llm(fresh_prompt_text)
+
     with ThreadPoolExecutor(max_workers=max(2, deep_n + fresh_n)) as ex:
-        deep_futures = [
-            ex.submit(call_llm, deep_prompt_text, system_prompt=sys_prompt)
-            for _ in range(deep_n)
-        ]
-        fresh_futures = [
-            ex.submit(call_llm, fresh_prompt_text) for _ in range(fresh_n)
-        ]
+        deep_futures = [ex.submit(_deep_position_call) for _ in range(deep_n)]
+        fresh_futures = [ex.submit(_fresh_position_call) for _ in range(fresh_n)]
         deep_positions = [f.result() for f in deep_futures]
         fresh_positions = [f.result() for f in fresh_futures]
 
@@ -1342,9 +1376,17 @@ def method_ploidy(task: Task) -> str:
         f"Also list anything your side found that they missed."
     )
 
+    def _deep_challenge_call() -> str:
+        _bind_parent_tracker(parent_tracker)
+        return call_llm(deep_challenge_prompt)
+
+    def _fresh_challenge_call() -> str:
+        _bind_parent_tracker(parent_tracker)
+        return call_llm(fresh_challenge_prompt)
+
     with ThreadPoolExecutor(max_workers=2) as ex:
-        deep_chal_fut = ex.submit(call_llm, deep_challenge_prompt)
-        fresh_chal_fut = ex.submit(call_llm, fresh_challenge_prompt)
+        deep_chal_fut = ex.submit(_deep_challenge_call)
+        fresh_chal_fut = ex.submit(_fresh_challenge_call)
         deep_challenge = deep_chal_fut.result()
         fresh_challenge = fresh_chal_fut.result()
 
@@ -1793,109 +1835,148 @@ def run_experiment(
     results_dir.mkdir(parents=True, exist_ok=True)
 
     all_results = []
+    all_results_lock = threading.Lock()
 
-    for task in tasks:
-        print(f"\n{'=' * 60}")
-        print(f"Task: {task.name} ({task.id})")
-        print(f"Ground truth: {len(task.ground_truth)} known issues")
-        print(f"Effort: {eff} | Language: {actual_lang} | Injection: {inj}")
-        print(f"{'=' * 60}")
+    # Parallelism tuning. Each method-thread spawns its own claude --print
+    # subprocess(es); Ploidy additionally fans out to deep_n + fresh_n
+    # internal threads. Peak concurrency = TASK_PARALLEL_N * (Single 1 +
+    # CCR 1 + Ploidy (deep_n + fresh_n)) plus their judge calls. Default 4×3
+    # tasks × methods gives up to ~28 concurrent claude --print at peak.
+    # Override via PLOIDY_TASK_PARALLEL / PLOIDY_METHOD_PARALLEL.
+    task_parallel_n = max(1, int(os.environ.get("PLOIDY_TASK_PARALLEL", "4")))
+    method_parallel_n = max(1, int(os.environ.get("PLOIDY_METHOD_PARALLEL", str(len(methods)))))
 
-        for method_id, (method_name, method_fn) in methods.items():
-            result_file = results_dir / f"{task.id}_{method_id}.json"
-            if result_file.exists():
-                print(f"\n  [{method_name}] SKIP (already exists)")
-                try:
-                    with open(result_file) as f:
-                        existing = json.load(f)
-                    if "error" not in existing:
-                        all_results.append(existing)
-                except (json.JSONDecodeError, KeyError):
-                    pass
-                continue
-            print(f"\n  [{method_name}] running (effort={eff})...", flush=True)
-            t0 = time.time()
-            reset_token_tracker()
+    def _run_one_method(task, method_id, method_name, method_fn):
+        """Run one (task, method) cell. Per-thread token tracker via TLS.
 
+        Returns the result dict (with f1/tokens/judgment), or None if the
+        cell already existed and could not be re-loaded cleanly, or an
+        ``{"error": ...}`` dict on exception.
+        """
+        result_file = results_dir / f"{task.id}_{method_id}.json"
+        if result_file.exists():
+            print(f"\n  [{task.id}::{method_name}] SKIP (already exists)", flush=True)
             try:
-                output = method_fn(task)
-                elapsed = time.time() - t0
-                print(f"  [{method_name}] done ({elapsed:.0f}s)", flush=True)
+                with open(result_file) as f:
+                    existing = json.load(f)
+                if "error" not in existing:
+                    return existing
+            except (json.JSONDecodeError, KeyError):
+                pass
+            return None
 
-                print(f"  [{method_name}] judging...", flush=True)
-                judgment = judge_result(task, method_name, output)
-                print(f"  [{method_name}] judge done", flush=True)
+        print(f"\n  [{task.id}::{method_name}] running (effort={eff})...", flush=True)
+        t0 = time.time()
+        reset_token_tracker()
 
-                if "scores" in judgment:
-                    found = sum(1 for s in judgment["scores"] if s["verdict"] == "FOUND")
-                    partial = sum(1 for s in judgment["scores"] if s["verdict"] == "PARTIAL")
-                    missed = sum(1 for s in judgment["scores"] if s["verdict"] == "MISSED")
-                    total = len(task.ground_truth)
-                    recall = (found + 0.5 * partial) / total
-                    bonus = judgment.get("bonus_findings", 0)
-                    precision = (found + 0.5 * partial) / max(found + partial + bonus, 1)
-                    f1 = 2 * precision * recall / max(precision + recall, 0.001)
-                    tokens = get_token_usage()
-                    token_str = (
-                        f"~{tokens['total_tokens']}tok"
-                        if tokens["estimated"]
-                        else f"{tokens['total_tokens']}tok"
-                    )
-                    print(
-                        f"  → {found}/{total} found, {partial} partial, {missed} missed | F1={f1:.3f} | {token_str}"
-                    )
-                else:
-                    found = partial = missed = 0
-                    f1 = 0.0
-                    print("  → judge parse error")
+        try:
+            output = method_fn(task)
+            elapsed = time.time() - t0
+            print(f"  [{task.id}::{method_name}] done ({elapsed:.0f}s)", flush=True)
 
+            print(f"  [{task.id}::{method_name}] judging...", flush=True)
+            judgment = judge_result(task, method_name, output)
+            print(f"  [{task.id}::{method_name}] judge done", flush=True)
+
+            if "scores" in judgment:
+                found = sum(1 for s in judgment["scores"] if s["verdict"] == "FOUND")
+                partial = sum(1 for s in judgment["scores"] if s["verdict"] == "PARTIAL")
+                missed = sum(1 for s in judgment["scores"] if s["verdict"] == "MISSED")
+                total = len(task.ground_truth)
+                recall = (found + 0.5 * partial) / total
+                bonus = judgment.get("bonus_findings", 0)
+                precision = (found + 0.5 * partial) / max(found + partial + bonus, 1)
+                f1 = 2 * precision * recall / max(precision + recall, 0.001)
                 tokens = get_token_usage()
-                result = {
-                    "task_id": task.id,
-                    "task_name": task.name,
-                    "method": method_id,
-                    "method_name": method_name,
-                    "effort": eff,
-                    "language": actual_lang,
-                    "injection_mode": INJECTION_MODE,
-                    "deep_n": DEEP_N,
-                    "fresh_n": FRESH_N,
-                    "backend": BACKEND,
-                    "model": MODEL,
-                    "temperature": TEMPERATURE,
-                    "max_tokens": MAX_TOKENS,
-                    "found": found,
-                    "partial": partial,
-                    "missed": missed,
-                    "total_gt": len(task.ground_truth),
-                    "bonus_findings": judgment.get("bonus_findings", 0),
-                    "f1": round(f1, 4),
-                    "elapsed_seconds": round(elapsed, 1),
-                    "token_usage": {
-                        "prompt_tokens": tokens["prompt_tokens"],
-                        "completion_tokens": tokens["completion_tokens"],
-                        "total_tokens": tokens["total_tokens"],
-                        "llm_calls": tokens["calls"],
-                        "estimated": tokens["estimated"],
-                    },
-                    "judgment": judgment,
-                }
-                all_results.append(result)
-
-                with open(results_dir / f"{task.id}_{method_id}.json", "w") as f:
-                    json.dump(
-                        {"task": asdict(task), "output": output, **result},
-                        f,
-                        indent=2,
-                        ensure_ascii=False,
-                    )
-
-            except Exception as e:
-                elapsed = time.time() - t0
-                print(f"ERROR ({elapsed:.0f}s): {e}")
-                all_results.append(
-                    {"task_id": task.id, "method": method_id, "effort": eff, "error": str(e)}
+                token_str = (
+                    f"~{tokens['total_tokens']}tok"
+                    if tokens["estimated"]
+                    else f"{tokens['total_tokens']}tok"
                 )
+                print(
+                    f"  [{task.id}::{method_name}] → {found}/{total} found, {partial} partial, {missed} missed | F1={f1:.3f} | {token_str}",
+                    flush=True,
+                )
+            else:
+                found = partial = missed = 0
+                f1 = 0.0
+                print(f"  [{task.id}::{method_name}] → judge parse error", flush=True)
+
+            tokens = get_token_usage()
+            result = {
+                "task_id": task.id,
+                "task_name": task.name,
+                "method": method_id,
+                "method_name": method_name,
+                "effort": eff,
+                "language": actual_lang,
+                "injection_mode": INJECTION_MODE,
+                "deep_n": DEEP_N,
+                "fresh_n": FRESH_N,
+                "backend": BACKEND,
+                "model": MODEL,
+                "temperature": TEMPERATURE,
+                "max_tokens": MAX_TOKENS,
+                "found": found,
+                "partial": partial,
+                "missed": missed,
+                "total_gt": len(task.ground_truth),
+                "bonus_findings": judgment.get("bonus_findings", 0),
+                "f1": round(f1, 4),
+                "elapsed_seconds": round(elapsed, 1),
+                "token_usage": {
+                    "prompt_tokens": tokens["prompt_tokens"],
+                    "completion_tokens": tokens["completion_tokens"],
+                    "total_tokens": tokens["total_tokens"],
+                    "llm_calls": tokens["calls"],
+                    "estimated": tokens["estimated"],
+                },
+                "judgment": judgment,
+            }
+
+            with open(result_file, "w") as f:
+                json.dump(
+                    {"task": asdict(task), "output": output, **result},
+                    f,
+                    indent=2,
+                    ensure_ascii=False,
+                )
+            return result
+
+        except Exception as e:
+            elapsed = time.time() - t0
+            print(f"  [{task.id}::{method_name}] ERROR ({elapsed:.0f}s): {e}", flush=True)
+            return {"task_id": task.id, "method": method_id, "effort": eff, "error": str(e)}
+
+    def _run_one_task(task):
+        """Run all methods for one task; methods execute concurrently."""
+        print(f"\n{'=' * 60}", flush=True)
+        print(f"Task: {task.name} ({task.id})", flush=True)
+        print(f"Ground truth: {len(task.ground_truth)} known issues", flush=True)
+        print(f"Effort: {eff} | Language: {actual_lang} | Injection: {inj}", flush=True)
+        print(f"{'=' * 60}", flush=True)
+
+        with ThreadPoolExecutor(max_workers=method_parallel_n) as m_ex:
+            method_futures = [
+                m_ex.submit(_run_one_method, task, mid, mname, mfn)
+                for mid, (mname, mfn) in methods.items()
+            ]
+            collected = [f.result() for f in method_futures]
+
+        with all_results_lock:
+            for r in collected:
+                if r is not None and "error" not in r:
+                    all_results.append(r)
+
+    # Task-level parallelism: process up to ``task_parallel_n`` tasks
+    # concurrently. Each task spawns its own method-level ThreadPoolExecutor,
+    # so peak subprocess count = task_parallel_n × (1 + 1 + (deep_n+fresh_n))
+    # + judges. With defaults (4 tasks × 3 methods, deep_n=fresh_n=1) that's
+    # ~16 active claude --print subprocesses at burst.
+    with ThreadPoolExecutor(max_workers=task_parallel_n) as task_ex:
+        task_futures = [task_ex.submit(_run_one_task, task) for task in tasks]
+        for fut in task_futures:
+            fut.result()
 
     # Summary
     with open(results_dir / "summary.json", "w") as f:
