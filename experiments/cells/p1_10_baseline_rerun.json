@@ -1,0 +1,1715 @@
+[
+  {
+    "index": 0,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 1,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 2,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 3,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 3,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 4,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 4,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 5,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 5,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 6,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 6,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 7,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 7,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 8,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 8,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 9,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 9,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 10,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 11,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 12,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 13,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 3,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 14,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 4,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 15,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 5,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 16,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 6,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 17,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 7,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 18,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 8,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 19,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 9,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 20,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 21,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 22,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 23,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 3,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 24,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 4,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 25,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 5,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 26,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 6,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 27,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 7,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 28,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 8,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 29,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 9,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 30,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 31,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 32,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 33,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 3,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 34,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 4,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 35,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 5,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 36,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 6,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 37,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 7,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 38,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 8,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 39,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 9,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 40,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 41,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 42,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 43,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 3,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 44,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 4,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 45,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 5,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 46,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 6,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 47,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 7,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 48,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 8,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 49,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 9,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 50,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 51,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 52,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 53,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 3,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 54,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 4,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 55,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 5,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 56,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 6,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 57,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 7,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 58,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 8,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 59,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 9,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 60,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 61,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 62,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 63,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 64,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 65,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 66,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 67,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 68,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 69,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 70,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 71,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 72,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 73,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 74,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 75,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 76,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 77,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 3,
+    "fresh_n": 3,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 78,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 79,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 80,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 81,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 82,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 83,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 1,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 84,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 85,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 1,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  },
+  {
+    "index": 86,
+    "sweep": "P1_10",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 5,
+    "fresh_n": 5,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 2,
+    "task_idx": 2,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  }
+]
