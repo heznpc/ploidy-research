@@ -1,0 +1,2954 @@
+[
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": true,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_233118_573892_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": true,
+    "l3": true,
+    "dir": "20260501_134628_400528_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041655_299365_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_083041_579902_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_141208_348043_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_060646_165914_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_035149_888517_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_091938_051594_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_083221_566172_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_064116_496796_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_124527_652649_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223836_909598_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_221046_068510_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_075157_035276_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.16666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_075911_823469_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_083409_463981_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_220957_719417_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_132801_683978_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041722_998368_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_084903_551650_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_174438_338690_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "ploidy",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_182716_565644_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_085935_331261_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223100_652943_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145638_777143_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_142048_200418_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_080141_024513_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_062321_747986_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_150216_532658_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_075601_299706_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084346_467150_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_124254_538150_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_231940_065203_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230539_154844_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_122913_469290_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135839_633710_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "stochastic_n",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_185712_588751_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_073530_631510_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_225739_670450_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_125910_653536_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_081254_399868_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083951_775200_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_170706_787267_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260502_034357_689791_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_085401_162413_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_191612_744342_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_194536_495747_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230859_100490_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145837_756348_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041235_431782_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230501_601759_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_194518_756699_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083341_535445_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_063125_666416_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260502_035622_896787_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_233716_231364_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_181139_945420_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135454_275772_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_060222_267362_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": true,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_032003_548673_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_123141_168133_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224334_571197_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223510_882455_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_124024_338528_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_050025_893055_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223359_511717_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224312_196758_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_051703_840444_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_133700_488425_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_042003_944472_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040306_068204_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_092920_983976_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_093415_783307_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223836_169351_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_043758_717859_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144659_911886_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_091112_580451_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_042832_341283_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230655_523871_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083130_925316_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224103_962637_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_052454_428851_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_184256_545073_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083344_587569_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144451_440232_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "self_consistency",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_193534_418609_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084931_570535_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_074248_466038_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040549_889938_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_061012_989098_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_083819_115768_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_053209_169245_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_075148_342185_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041457_914740_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224827_012150_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_032639_886276_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 0.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084858_279836_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_080146_219353_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_033424_441897_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_054559_763056_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145857_234958_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230936_372458_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_055309_550404_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_075500_249415_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_053540_258275_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_190541_705850_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_061452_214579_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224045_419563_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_140543_564499_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_051653_766820_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_085309_668401_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_072343_083622_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": true,
+    "l3": true,
+    "dir": "20260501_225833_302639_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_075909_761065_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_181259_884709_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230119_774845_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_055623_170700_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_183524_328381_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_183620_901502_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_084139_328320_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_191343_377867_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223136_288619_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_123903_948974_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084223_571331_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": true,
+    "l3": true,
+    "dir": "20260501_195156_595463_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_183825_598930_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_074752_695160_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083559_130811_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_034916_253126_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145528_801498_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144901_503535_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_175657_500920_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_000348_292601_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_174103_821735_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_173409_839675_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_084411_718995_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_122803_005264_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_130925_515895_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_081831_236112_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223202_823976_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_080055_302553_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_182733_032311_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_174009_550761_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_170740_487343_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_092443_820470_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_200009_389815_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_094558_552773_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083723_627797_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_132746_472848_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_232010_611532_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_225427_175088_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_234250_672775_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040648_487528_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_134539_125629_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_181913_396131_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_124159_584607_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_150450_978429_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_235405_141788_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_221024_284147_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_073556_815625_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "stochastic_n",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_082247_553147_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_134806_833706_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144159_647526_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_174552_106714_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040902_650356_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144952_760568_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040808_883023_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_032746_358827_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_073559_836978_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_232851_168325_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224931_600507_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145945_726536_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040514_321481_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223705_153304_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_140408_126847_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_143848_862028_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_173107_967898_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_182616_663827_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_192643_951513_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_131824_190082_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223343_374291_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224108_638357_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_085602_767215_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": true,
+    "l3": true,
+    "dir": "20260502_063940_421618_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224553_188417_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_130526_818781_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_184521_330837_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_072301_020670_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_143017_874208_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224546_871382_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_222838_170523_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_231017_913533_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083947_964153_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_182102_052404_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_132234_250011_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230750_192428_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_083844_175511_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_084254_732226_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_232046_983807_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_150154_957922_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_140505_041307_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_081313_792301_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_140021_024409_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_034154_998230_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260502_084655_116145_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_225013_142332_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_063018_879519_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041019_530657_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_141511_336825_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_052428_078283_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_143950_242554_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084711_169616_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040406_404569_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_132825_803339_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135256_032022_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_124850_665079_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_175230_511777_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_120427_709469_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_175021_331697_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_080115_364314_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_045227_988080_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "stochastic_n",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_081329_934462_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_185358_018205_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_185431_667914_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135609_806581_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_185736_046525_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_130420_019244_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_184304_335084_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_234221_673110_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083949_745320_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_075416_651098_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_195304_801456_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_235851_340202_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_085555_353602_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_120637_047237_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_133454_797632_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_184744_079859_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_180030_080853_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_044442_705161_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084012_771996_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144724_691059_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_193836_234710_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_233133_103473_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_084651_975670_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_192925_051715_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_224307_572969_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084448_553337_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_230158_138967_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_141724_451888_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_185041_055373_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_142513_968684_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "single",
+    "recall": 0.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_173918_189816_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "stochastic_n",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_081232_891999_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_191917_673111_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_085834_189275_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_042803_030514_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_040105_644302_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135538_685148_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_233012_024142_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_000809_594826_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_123831_833914_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_050849_263717_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": true,
+    "l3": true,
+    "dir": "20260502_033549_818556_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_234551_273993_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_062423_080843_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_074442_716066_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_081052_926901_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_094610_822540_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_043731_413209_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_172720_507285_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_125548_341083_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "stochastic_n",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_091141_593331_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_143251_830482_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_143336_619182_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "stochastic_n",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_080346_269657_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_045505_875307_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_141243_506608_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_132146_589435_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_082317_004509_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145212_699707_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041339_867568_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_124445_039429_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_231100_427890_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_083350_582582_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_131004_497964_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_054019_904836_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_050843_225938_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_082825_839696_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_084639_066127_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_083102_296046_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_131514_470960_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.16666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_150442_968248_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_031901_572086_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135804_819172_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_222907_415879_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_232045_044772_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_180415_668466_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_054851_068396_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_193737_445704_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_085159_724356_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "single",
+    "recall": 0.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_173717_585303_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_082547_348957_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_142433_432181_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_small_team_scale_mismatch",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_220907_728149_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_120437_339528_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_120421_013350_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_234012_914853_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_041523_346665_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_140950_659755_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_144406_270286_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_195521_604076_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_084939_788957_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_145543_465108_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_early_adopter_pioneer",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_233902_641410_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_gamma_mid_migration_hybrid",
+    "method": "self_consistency",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_194517_786855_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223605_108626_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "ploidy",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": true,
+    "dir": "20260501_172550_996050_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "ploidy",
+    "recall": 0.5,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_123126_169705_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.3333333333333333,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_150229_150589_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_postgres_consensus",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_082143_978552_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_035853_168952_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "ploidy",
+    "recall": 1.0,
+    "l1": true,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135630_974361_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "single",
+    "recall": 0.6666666666666666,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_135342_184183_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_legacy_auth_owner",
+    "method": "self_consistency",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_180944_864820_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_logger_architect",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_085319_816027_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_caching_lead_decree",
+    "method": "single",
+    "recall": 0.8333333333333334,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_223910_436908_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_alpha_microservices_cto_mandate",
+    "method": "self_consistency",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260501_193015_941340_effort-high_lang-en_inj-raw"
+  },
+  {
+    "task": "adv_beta_orm_creator_defends",
+    "method": "stochastic_n",
+    "recall": 1.0,
+    "l1": false,
+    "l2": false,
+    "l3": false,
+    "dir": "20260502_044537_636266_effort-high_lang-en_inj-raw"
+  }
+]

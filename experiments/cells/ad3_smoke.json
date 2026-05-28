@@ -1,0 +1,17 @@
+[
+  {
+    "index": 0,
+    "sweep": "AD3_smoke",
+    "model": "claude-opus-4-7",
+    "method": "ploidy_alt",
+    "deep_n": 2,
+    "fresh_n": 2,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_name": "adv_alpha_postgres_consensus",
+    "supports_hypotheses": ["H_10", "smoke"]
+  }
+]

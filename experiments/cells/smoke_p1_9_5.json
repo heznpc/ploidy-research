@@ -1,0 +1,42 @@
+[
+  {
+    "index": 0,
+    "sweep": "SMOKE",
+    "model": "claude-opus-4-7",
+    "method": "single",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1",
+      "H_3",
+      "H_4",
+      "H_5",
+      "H_6"
+    ]
+  },
+  {
+    "index": 1,
+    "sweep": "SMOKE",
+    "model": "claude-opus-4-7",
+    "method": "stochastic_n",
+    "deep_n": 1,
+    "fresh_n": 1,
+    "effort": "high",
+    "injection": "raw",
+    "context_pct": 100,
+    "lang": "en",
+    "rep": 0,
+    "task_idx": 0,
+    "supports_hypotheses": [
+      "H_1_null",
+      "H_4",
+      "H_6"
+    ]
+  }
+]
