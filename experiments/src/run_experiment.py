@@ -499,21 +499,26 @@ def _calc_wait_until_reset(err_msg: str) -> int:
     import re
     from datetime import datetime, timedelta
 
-    # Tier 1: explicit "resets Xam/pm" parse.
-    match = re.search(r"resets\s+(\d{1,2})(am|pm)", err_msg.lower())
+    # Tier 1: explicit "resets H[:MM]am/pm" parse.
+    # CLI emits forms like ``resets 9:40am``, ``resets 6am``, ``resets 11:05pm``.
+    # The previous pattern ``\d{1,2}(am|pm)`` failed to match ``9:40am`` and
+    # silently fell through to the 5h-cycle fallback, which on a 9:40-anchored
+    # window slept until 10:40 instead of the actual 9:40 reset.
+    match = re.search(r"resets\s+(\d{1,2})(?::(\d{2}))?\s*(am|pm)", err_msg.lower())
     if match:
         hour = int(match.group(1))
-        ampm = match.group(2)
+        minute = int(match.group(2)) if match.group(2) else 1
+        ampm = match.group(3)
         if ampm == "pm" and hour != 12:
             hour += 12
         elif ampm == "am" and hour == 12:
             hour = 0
 
         now = datetime.now()
-        target = now.replace(hour=hour, minute=1, second=0, microsecond=0)
+        target = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
         if target <= now:
             target += timedelta(days=1)
-        wait = int((target - now).total_seconds())
+        wait = int((target - now).total_seconds()) + 60  # safety buffer
         return max(wait, 60)
 
     # Tier 2: 5-hour rolling window fallback.
