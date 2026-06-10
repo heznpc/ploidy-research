@@ -457,3 +457,45 @@ The marker preserves the evidence and prevents the pollution.
 
 
 
+
+## 2026-06-11 -- Memory-store audit: 764 experiment files relocated out of the live auto-memory store
+
+**Context**: A portfolio-wide audit of Claude Code auto-memory stores
+(34 stores, 917 files, full-depth multi-agent read on 2026-06-10) found
+the live store for this repo held 780 files / ~30.5k lines, of which 756
+were synthetic-scenario records written by experiment cell sessions
+(every scenario family verified verbatim against
+`experiments/src/tasks_adversarial.py` and `results/2026*/adv_*_ploidy.json`),
+and the store's 782-line MEMORY.md index — 93.5% fixture entries — was
+injected into every real session in this cwd. Eight real research
+artifacts (incl. the 46-recurrence Deep-seat fabrication log and the
+2026-05-01 input-absence-hallucination replications) were buried in the
+fixture mass. This is an in-vivo instance of the unexpiring-cache
+contamination mechanism the paper studies.
+
+**Decision**:
+
+1. Relocate, do not delete: 756 fixtures + 6 evidence artifacts + the
+   planted `k-compliance` store pair (synthetic persona, zero sessions)
+   moved byte-exact to
+   `experiments/data/processed/memory_store_snapshot_20260611/`
+   (see its README for layout and the r-series concurrency meta-records).
+2. Delete only verified duplicates: 13 memory files whose content was
+   re-verified at point of action to exist verbatim in canonical
+   surfaces (repo CLAUDE.md, global CLAUDE.md, paper/main.tex
+   \S distinction/industry, this decisions log).
+3. Replace the 782-line index with a short redirect: truth precedence is
+   repo CLAUDE.md -> planning/decisions.md (recent entries) ->
+   experiments/DATA_SOURCES.md; the memory store is not a source of truth.
+4. Preserve the v0.2 experiment findings that existed only in memory
+   (2026-03-18, recorded here for provenance): SF-Active 100% recall on
+   3/3 English long-context tasks; Korean euphemization drops SF-Active
+   recall ~30pp on normative-judgment tasks; max effort lets Single
+   Session match SF-Active (5/5), suggesting an effort x asymmetry
+   interaction. These predate the v0.3 reframe and the 7,152-cell
+   canonical store; treat as historical pilot signals, not current data.
+
+**Why**: The store was contaminating live sessions with synthetic
+scenario summaries while burying real evidence; relocation preserves
+paper provenance, deletion-of-duplicates removes only copies, and the
+redirect index prevents recurrence of cache-rot in this store.

@@ -18,6 +18,7 @@ Run `bash experiments/scripts/data-census.sh` to refresh the numbers below.
 | `experiments/cells/` | 16 | Sweep specifications (P / Q / AD1 / AD3 / pilot_v2_{P,Q,merged} / smoke etc.). Each is a list of cell configs. |
 | `experiments/logs/` | 106 | Per-sweep execution logs (`{sweep}.jsonl` with `cell_index / cell / returncode / stdout_tail` per row). |
 | `experiments/data/processed/` | 19 | Aggregated analyses (`ad1_interim_refusal_flags.json`, `ad1_stage1_aggregated.json`, `event_a_b/{w1_per_trial,per_trial,fresh_excl_items_for_annotation}.jsonl`, plus claude session manifests). |
+| `experiments/data/processed/memory_store_snapshot_20260611/` | 765 | 2026-06-11 relocation of the live auto-memory store: 756 sweep-written synthetic-scenario records + 6 evidence artifacts (46-recurrence fabrication log, input-absence replications, consolidated reviews) + planted k-compliance store pair. See its README + decisions.md 2026-06-11. |
 
 ## Cell breakdown by model (canonical store)
 
