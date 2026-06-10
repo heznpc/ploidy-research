@@ -1,0 +1,5 @@
+# False positives — generic-api-key regex matching synthetic-scenario prose
+# (no credentials; lines visually verified 2026-06-11). Commit-agnostic form
+# so the fingerprints survive squash-merge.
+experiments/data/processed/memory_store_snapshot_20260611/fixtures/project_arch_monolith_split_coi_seat.md:generic-api-key:36
+experiments/data/processed/memory_store_snapshot_20260611/fixtures/project_arch_split_4reviewer_round21.md:generic-api-key:20
